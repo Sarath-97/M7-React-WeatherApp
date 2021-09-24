@@ -1,15 +1,16 @@
 
 import './App.css';
-import LongAndLat from './components/LongAndLat.jsx';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
-import MyNavBar from './components/MyNavBar';
+import 'semantic-ui-css/semantic.min.css'
+import WeatherData from './components/WeatherData.jsx';
+import MyNavBar from './components/MyNavBar.jsx';
+
 
 function App() {
   return (
     <div className="App">
       <MyNavBar />
-      <LongAndLat />
+      <WeatherData />
     </div>
   );
 }
