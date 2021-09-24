@@ -22,9 +22,9 @@ const WeatherData = async () => {
 
       await fetch(`${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${long}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`)
       .then(response => response.json())
-      .then(data => {
-        setData(data)
-        console.log(data);
+      .then(result => {
+        setData(result)
+        console.log(result);
       });
     }
     fetchData();
